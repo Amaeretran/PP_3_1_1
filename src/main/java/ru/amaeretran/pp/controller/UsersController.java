@@ -47,7 +47,7 @@ public class UsersController {
 
     @GetMapping("/{id}")
     //Вот в этом месте не понял, что делать - через @PostMapping не работает.
-    // "квери параметризируй классом - не работай с сырым типом" - а это тут к чему?
+    // "квери параметризируй классом - не работай с сырым типом" - а это в данной задаче (Spring-Boot) к чему?
     public String delete(@PathVariable Integer id) {
         userService.delete(id);
         return "redirect:/users";
